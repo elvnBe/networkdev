@@ -1,0 +1,50 @@
+{	
+	"domainname" : "elvnlabs.be",
+	"dns_servers" : [
+		{
+			"server" : "1.2.3.4"
+		},
+		{
+			"server" : "4.3.2.1"
+		}
+	],
+	"ntp_servers" : [
+		{
+			"server" : "1.2.3.4"
+		},
+		{
+			"server" : "4.3.2.1"
+		}
+	],
+	"users" : [
+		{
+			"name" : "fistname",
+			"pass" : "fisrstpass"
+		}
+	],
+	"en_secret" : "sshitsasecret",
+	"max_login_attempts" : 4,
+	"ssh_timeout_value" : 60,
+	"ssh_auth_retries" : 4,
+	"blocking_period" : 300,
+	"failed_attempts" : 100,
+	"failed_timeperiod" : 1800,
+	"vtp_domain" : "test",	
+	"vtp_password" : "testvtppass",
+	"syslog_server" : "10.20.30.40",
+	"snmp_acl_name" : "snmpaccess",
+	"snmp_servers" : [
+	{
+		"server" : "60.70.80.90"
+	},
+	{
+		"server" : "90.80.70.60"
+	}
+	],
+	"snmp_read_view" : "read",
+	"snmp_write_view" : "write",
+	"snmp_group" : "group",
+	"snmp_user" : "usr",
+	"snmp_auth_pass" : "pwd",
+	"snmp_priv_pass" : "pwd"
+}
