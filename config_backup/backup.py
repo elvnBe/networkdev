@@ -28,6 +28,7 @@ def main():
 		file.write('------------------------------------------------------------------' + '\n' + 'Switch: ' + hostname + '\n' + 'Time of backup: ' + date + ' ' + hour + '\n' + '------------------------------------------------------------------' + '\n')
 		file.write(output)
 		file.close()
+		connect.disconnect()
 
 	print 'Completed'
 
