@@ -1,0 +1,6 @@
+[
+	{
+		"hostname" : "switch_abc",
+		"mgmt_ip" : "10.19.237.11"
+	}
+]
