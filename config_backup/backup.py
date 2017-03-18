@@ -22,7 +22,7 @@ def main():
 		hour = str(now.hour) + ':' + str(now.minute)
 		print 'Strating backup of switch: ' + hostname
 		filename = hostname + '_' + date + '.txt'
-		connect = netmiko.ConnectHandler(device_type='cisco_ios', ip=param['mgmt_ip'], username=user, password=passw) 
+		connect = netmiko.ConnectHandler(device_type='cisco_ios', ip=param['mgmt_ip'], username=user, password=passw, global_delay_factor= 2) 
 		output = connect.send_command('show run')
 		file = open(filedir + filename, "w")
 		file.write('------------------------------------------------------------------' + '\n' + 'Switch: ' + hostname + '\n' + 'Time of backup: ' + date + ' ' + hour + '\n' + '------------------------------------------------------------------' + '\n')
